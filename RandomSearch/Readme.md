@@ -1,5 +1,5 @@
 # Random Search
-Simple implementation of [random searchg](https://en.wikipedia.org/wiki/Hill_climbing) in a continuos space with step size variable
+Simple implementation of [random searchg](https://en.wikipedia.org/wiki/Random_search) in a continuos space with step size variable
 
 Load
 
