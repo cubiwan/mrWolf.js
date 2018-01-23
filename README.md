@@ -1,2 +1,2 @@
 # mrWolf.js
-A collection of metaheuristics to solver problems in JS
+*Mr Wolf solve problems.* A collections of heuristics and metaheuristics in JS to solve problems.
