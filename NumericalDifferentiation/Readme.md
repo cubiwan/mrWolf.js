@@ -7,8 +7,8 @@ Create one class with two functions:
 var diff = new mrWolf.Differentiation(epsilon);
 ```
 
-Creates a new Differentiation object. Uses epsilon to aproximate derivative _f(x+epsilon)-f(x-epsilon)/epsilon*2_
-
+Creates a new Differentiation object. Uses epsilon to aproximate derivative _f(x+epsilon)-f(x-epsilon)/epsilon*2_  
+Default values of epsilon is 0.001.
 
 ```js
 diff(x, f);
