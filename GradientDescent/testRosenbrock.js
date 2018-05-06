@@ -12,11 +12,11 @@ var parameters = new mrWolf.GdParameters();
 parameters.dimensions = 5;
 parameters.cordsMin = [-5, -5, -5, -5, -5];
 parameters.cordsMax = [5, 5, 5, 5, 5];
-parameters.step = 0,01;
+parameters.step = 0.1; //that number is too bug, must be 0.00001
 
 var gd = new mrWolf.GradientDescent(parameters, model, diff);
-for(var i = 0; i < 2000; ++i){
+for(var i = 0; i < 500; ++i){
   gd.search();
-  console.log("Iteration "+i+" : "+gd.fitness+" "+gd.cords);
+  console.log("Iteration "+i+" : "+gd.fitness+" -> "+gd.cords);
 }
 console.log(gd.cords);
