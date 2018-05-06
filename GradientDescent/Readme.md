@@ -44,6 +44,7 @@ parameters.dimensions = 0; //number of cords
 parameters.cordsMin = [-5,-5,-5,-5,-5]; //min value for cord
 parameters.cordsMax = [5,5,5,5,5]; //max value for cord
 parameters.step = 0.1 // calculate newSolution = solution-step*grad
+this.reduceStep = 0.9; // reduce step each time fitness value not decreased
 }
 ```
 
