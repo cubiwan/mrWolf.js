@@ -9,7 +9,7 @@ function GradientDescent(parameters, model, diff){
   this.search = function(){
     var newCords = this.newSolution(this.cords.slice(0));
     var newFitness = this.model.calculateFitness(newCords);
-    console.log("fitness: "+this.fitness + " new fitness "+newFitness);
+    //console.log("fitness: "+this.fitness + " new fitness "+newFitness);
     if(newFitness < this.fitness){
       this.cords = newCords;
       this.fitness = newFitness;
@@ -26,11 +26,11 @@ function GradientDescent(parameters, model, diff){
       }
     }else{
       var grad = diff.grad(cords, this.model.calculateFitness);
-      console.log("grad: "+grad);
+      //console.log("grad: "+grad);
       for(var i = 0; i < this.parameters.dimensions; ++i){
         cords[i] -= this.parameters.step*grad[i]
       }
-      console.log("new cords: "+cords);
+      //console.log("new cords: "+cords);
     }
     return this.model.validateCords(cords);
   }
